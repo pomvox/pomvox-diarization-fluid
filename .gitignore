@@ -1,0 +1,5 @@
+.build/
+.swiftpm/
+*.mlmodelc/
+*.wav
+.DS_Store
