@@ -13,7 +13,7 @@ let package = Package(
         .executable(name: "speaker-notes-example", targets: ["SpeakerNotesExample"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/pomvox/pomvox-cleanup-engine.git", exact: "0.2.0-beta.1"),
+        .package(url: "https://github.com/pomvox/pomvox-cleanup-engine.git", exact: "0.2.0-beta.2"),
         .package(url: "https://github.com/FluidInference/FluidAudio.git", exact: "0.15.5"),
     ],
     targets: [
