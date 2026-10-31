@@ -1,19 +1,19 @@
 {
   "repository": "https://github.com/pomvox/pomvox-cleanup-engine",
-  "tag": "v0.2.0-beta.1",
+  "tag": "v0.2.0-beta.2",
   "filesSHA256": {
     ".github/workflows/ci.yml": "cf7adca03bd2c09700cb26b02f96181e5cb179fe2456dcb321224cba37d458b3",
     ".gitignore": "80f153d8a71641885b7bf6028249be57f2d94bb7d85666cb65ea7bad66e00852",
     "Examples/SpeakerNotes/SpeakerNotesExample.swift": "0abb2a003e0d553c3f7b3563d2baccb1c4fb27366c01c2aff0e5ff534be287d8",
     "LICENSE": "bfc49933cccb385e76d20379f6c770884a1c590f23b9bee1468af265008368a8",
-    "Package.swift": "c4be9a718cd72444eaf903b890fc8a36ee27ec83134ddb5aa72cf3f91f7a6b65",
-    "README.md": "c53228f6f7f6c2752fe795dde65f050788e936542e63bf30f30fa5b36ba707f2",
+    "Package.swift": "64022e85483094c0c0f322642c4da87fa90e45595f4dbf924ec36631ecde3aa9",
+    "README.md": "5527e15aeaade9bca857fec02202bd3f974186d06c99285a724a96a8190e25d1",
     "Sources/PomvoxDiarizationFluid/FluidDiarizer.swift": "0500ef26c6f2440af20db33977706652bf69af0a5dcc2f49b5467bee9eb8f535",
     "THIRD_PARTY_NOTICES.md": "9b6304ebbfa37131ed1530d4ad8cc494700249ce41db2ecf3db16dfe14348fb4",
     "Tests/PomvoxDiarizationFluidTests/FluidDiarizerTests.swift": "8c1af4bff18d77fb9753eac56e55e6e1041b81f8dbebe29962d839a2086f69d9",
     "Tests/PomvoxDiarizationFluidTests/LifecycleTests.swift": "ec04d098e9e4ff423a6947c5cfb45b9cd9983d16bc87c002543b5900c70ea343",
     "Tests/PomvoxDiarizationFluidTests/ScenarioTests.swift": "599c9a22a824501b5d7ebc9c895ae065896462ce89637ae680c301c347866e1c",
-    "VERSION": "214374e4ab6ceb79d5fa5ff001fe9bbcbea31c3fd8c6bd42d48e7efaf6b2ce9f",
+    "VERSION": "6e759965e62500d8923245e7a7214c31619d095f8fd88edff31fd1d8d88760a8",
     "packs/pyannote-community1-coreml/pack.json": "0fbac1dad6ead5328f74825b5077b652ae1e14789f69f5475c948720d34116aa"
   }
 }

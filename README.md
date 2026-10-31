@@ -1,13 +1,13 @@
 # Pomvox Diarization (FluidAudio)
 
-Local speaker diarization runtime for [Pomvox Cleanup Engine](https://github.com/pomvox/pomvox-cleanup-engine), version **0.2.0-beta.1**. This is a **beta developer SDK**, not a production-readiness certification. It runs FluidAudio 0.15.5's offline pyannote community-1 pipeline (segmentation, WeSpeaker embeddings, VBx clustering) on Apple Silicon, from a verified pack, and never downloads. macOS 14+ with Swift 6 is required; macOS 15 is the validated floor for this pipeline. iOS 17 is a declared build target only; on-device behaviour is not validated.
+Local speaker diarization runtime for [Pomvox Cleanup Engine](https://github.com/pomvox/pomvox-cleanup-engine), version **0.2.0-beta.2**. This is a **beta developer SDK**, not a production-readiness certification. It runs FluidAudio 0.15.5's offline pyannote community-1 pipeline (segmentation, WeSpeaker embeddings, VBx clustering) on Apple Silicon, from a verified pack, and never downloads. macOS 14+ with Swift 6 is required; macOS 15 is the validated floor for this pipeline. iOS 17 is a declared build target only; on-device behaviour is not validated.
 
 ## Install
 
-Add this public repository in Xcode's **Add Package Dependencies**, selecting exact version `0.2.0-beta.1`, and add the `PomvoxDiarizationFluid` product to your app target. Alternatively:
+Add this public repository in Xcode's **Add Package Dependencies**, selecting exact version `0.2.0-beta.2`, and add the `PomvoxDiarizationFluid` product to your app target. Alternatively:
 
 ```swift
-.package(url: "https://github.com/pomvox/pomvox-diarization-fluid.git", exact: "0.2.0-beta.1")
+.package(url: "https://github.com/pomvox/pomvox-diarization-fluid.git", exact: "0.2.0-beta.2")
 // In your application target's dependencies:
 .product(name: "PomvoxDiarizationFluid", package: "pomvox-diarization-fluid")
 ```
@@ -16,7 +16,7 @@ The core SDK (`pomvox-cleanup-engine`) is pulled automatically at the matching e
 
 ## Obtain and install a pack
 
-The runtime loads only an installed pack that matches [`packs/pyannote-community1-coreml/pack.json`](packs/pyannote-community1-coreml/pack.json): 23 pinned files from Fluid Inference's `FluidInference/speaker-diarization-coreml` Core ML conversions, published under **CC-BY-4.0**. Obtain that snapshot yourself at the pinned revision and install it with the source repository's `scripts/prepare-diarizer-pack.py` (tag `v0.2.0-beta.1`); it never downloads. Keep the attribution in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) with any distribution.
+The runtime loads only an installed pack that matches [`packs/pyannote-community1-coreml/pack.json`](packs/pyannote-community1-coreml/pack.json): 23 pinned files from Fluid Inference's `FluidInference/speaker-diarization-coreml` Core ML conversions, published under **CC-BY-4.0**. Obtain that snapshot yourself at the pinned revision and install it with the source repository's `scripts/prepare-diarizer-pack.py` (tag `v0.2.0-beta.2`); it never downloads. Keep the attribution in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) with any distribution.
 
 ```swift
 import PomvoxDiarizationFluid // re-exports PomvoxDiarization and the transcript types
@@ -32,6 +32,6 @@ try await diarizer.closeAndWait() // returns once the models are released
 
 ## Limits
 
-Diarization quality has been measured only on synthetic speech: two voices are separated reliably, and similar voices can merge. There is no streaming, no speaker naming across recordings and no overlap handling. Read the [speaker transcripts and notes guide](https://github.com/pomvox/pomvox-cleanup-engine/blob/v0.2.0-beta.1/docs/speaker-notes.md) for the full contract, evidence and limits.
+Diarization quality has been measured only on synthetic speech: two voices are separated reliably, and similar voices can merge. There is no streaming, no speaker naming across recordings and no overlap handling. Read the [speaker transcripts and notes guide](https://github.com/pomvox/pomvox-cleanup-engine/blob/v0.2.0-beta.2/docs/speaker-notes.md) for the full contract, evidence and limits.
 
-This repository is a generated release distribution. Make contributions in [the source repository](https://github.com/pomvox/pomvox-cleanup-engine/tree/v0.2.0-beta.1/Runtime/Diarization); `SOURCE.json` records the source tag and the SHA-256 of every exported file.
+This repository is a generated release distribution. Make contributions in [the source repository](https://github.com/pomvox/pomvox-cleanup-engine/tree/v0.2.0-beta.2/Runtime/Diarization); `SOURCE.json` records the source tag and the SHA-256 of every exported file.
